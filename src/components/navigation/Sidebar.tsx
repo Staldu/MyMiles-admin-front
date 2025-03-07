@@ -1,4 +1,5 @@
 import React from "react";
+import {BrowserRouter, Link} from "react-router-dom";
 
 function SideBar() {
     return (
@@ -19,7 +20,7 @@ function SideBar() {
                                 <path
                                     d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z"/>
                             </svg>
-                            <span className="ms-3">Dashboard</span>
+                            <Link to="/"><span className="ms-3">Dashboard</span></Link>
                         </a>
                     </li>
                     <li>
@@ -32,7 +33,7 @@ function SideBar() {
                                       d="M4.37 7.657c2.063.528 2.396 2.806 3.202 3.87 1.07 1.413 2.075 1.228 3.192 2.644 1.805 2.289 1.312 5.705 1.312 6.705M20 15h-1a4 4 0 0 0-4 4v1M8.587 3.992c0 .822.112 1.886 1.515 2.58 1.402.693 2.918.351 2.918 2.334 0 .276 0 2.008 1.972 2.008 2.026.031 2.026-1.678 2.026-2.008 0-.65.527-.9 1.177-.9H20M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
                             </svg>
 
-                            <span className="ms-3">Mes Croisières</span>
+                            <Link to="/cruises"><span className="ms-3">Mes Croisières</span></Link>
                         </a>
                     </li>
                 </ul>

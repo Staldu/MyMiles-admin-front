@@ -1,0 +1,24 @@
+@import "./theme.scss";
+
+@import "../output.css";
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
